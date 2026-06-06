@@ -1,0 +1,11 @@
+# Auto-Reply Configuration
+# Add this to your .env file to control the auto-reply service
+
+# Enable or disable auto-reply functionality
+# Options: true, false, yes, no, 1, 0
+# Default: true
+AUTO_REPLY_ENABLED=true
+
+# Example usage:
+# To disable auto-reply: AUTO_REPLY_ENABLED=false
+# To enable auto-reply: AUTO_REPLY_ENABLED=true

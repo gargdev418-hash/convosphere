@@ -1,0 +1,181 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "Convo Sphere",
+      "persona": "E1 - The Anti-AI Designer",
+      "tone": "Professional, Intelligent, Calm, Efficient",
+      "archetype": "Swiss & High-Contrast (Modified for SaaS)",
+      "principles": [
+        "Fusion over Imitation: Mix Swiss precision with Soft Utility warmth.",
+        "Content is King: The conversation is the hero. UI recedes.",
+        "Density with Breath: High information density (for support agents) but with generous padding between groups.",
+        "Contrast: High contrast for readability, subtle contrast for hierarchy."
+      ]
+    },
+    "typography": {
+      "font_family": {
+        "headings": "Manrope, sans-serif",
+        "body": "Inter, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "weights": {
+        "headings": "700 (Bold) or 800 (ExtraBold)",
+        "body": "400 (Regular) and 500 (Medium)"
+      },
+      "scale": {
+        "h1": "text-4xl md:text-5xl tracking-tight font-bold",
+        "h2": "text-3xl tracking-tight font-bold",
+        "h3": "text-2xl tracking-tight font-semibold",
+        "body_lg": "text-lg leading-relaxed",
+        "body_base": "text-base leading-relaxed",
+        "caption": "text-sm text-muted-foreground tracking-wide uppercase"
+      },
+      "imports": [
+        "@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap');"
+      ]
+    },
+    "colors": {
+      "palette": {
+        "primary": {
+          "DEFAULT": "#4338ca",
+          "foreground": "#ffffff",
+          "hover": "#3730a3"
+        },
+        "secondary": {
+          "DEFAULT": "#f1f5f9",
+          "foreground": "#0f172a"
+        },
+        "background": "#ffffff",
+        "foreground": "#0f172a",
+        "muted": {
+          "DEFAULT": "#f8fafc",
+          "foreground": "#64748b"
+        },
+        "border": "#e2e8f0",
+        "accent": {
+          "success": "#10b981",
+          "warning": "#f59e0b",
+          "error": "#ef4444",
+          "info": "#3b82f6"
+        }
+      },
+      "gradients": {
+        "subtle_glow": "bg-gradient-to-br from-indigo-50 to-white",
+        "active_border": "bg-gradient-to-r from-indigo-500 to-purple-500"
+      },
+      "rules": [
+        "NO full-screen gradients.",
+        "Use 'Tinted Grey': Never pure #000000. Use #0f172a (Slate 900).",
+        "Primary color ONLY for main CTAs and active states."
+      ]
+    },
+    "layout": {
+      "spacing": {
+        "container_padding": "p-6 md:p-8 lg:p-12",
+        "section_gap": "gap-8",
+        "component_gap": "gap-4"
+      },
+      "grids": {
+        "dashboard": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6",
+        "inbox": "grid grid-cols-12 h-[calc(100vh-4rem)] overflow-hidden"
+      },
+      "radius": {
+        "default": "rounded-lg",
+        "card": "rounded-xl",
+        "button": "rounded-md"
+      }
+    },
+    "visual_enhancers": {
+      "shadows": {
+        "card": "shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-shadow duration-300",
+        "float": "shadow-[0_12px_32px_rgba(0,0,0,0.12)]"
+      },
+      "glassmorphism": {
+        "sidebar": "bg-white/80 backdrop-blur-xl border-r border-white/20",
+        "header": "bg-white/70 backdrop-blur-lg border-b border-white/20 sticky top-0 z-50"
+      },
+      "borders": {
+        "subtle": "border border-slate-100",
+        "active": "ring-2 ring-indigo-500 ring-offset-2"
+      }
+    },
+    "motion": {
+      "transitions": "transition-all duration-200 ease-out",
+      "hover_lift": "hover:-translate-y-1 hover:shadow-lg",
+      "micro_interactions": "active:scale-95"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm font-medium px-6 py-2.5 rounded-md transition-all active:scale-95",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80 font-medium px-6 py-2.5 rounded-md transition-all",
+      "ghost": "hover:bg-accent hover:text-accent-foreground px-4 py-2 rounded-md transition-colors"
+    },
+    "cards": {
+      "dashboard_widget": "bg-white border border-slate-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow",
+      "stat_card": "bg-white border border-slate-100 rounded-xl p-6 flex flex-col gap-2"
+    },
+    "inputs": {
+      "default": "flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+    },
+    "badges": {
+      "status": "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+    }
+  },
+  "assets": {
+    "images": {
+      "avatars": [
+        {
+          "url": "https://images.unsplash.com/photo-1589220286904-3dcef62c68ee?crop=entropy&cs=srgb&fm=jpg&q=85",
+          "alt": "Support Agent Sarah",
+          "category": "user_avatar"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1575299833801-85ce40813bac?crop=entropy&cs=srgb&fm=jpg&q=85",
+          "alt": "Support Agent Mike",
+          "category": "user_avatar"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1657771072153-878f8b0ce74a?crop=entropy&cs=srgb&fm=jpg&q=85",
+          "alt": "Customer David",
+          "category": "user_avatar"
+        }
+      ],
+      "backgrounds": [
+        {
+          "url": "https://images.unsplash.com/photo-1764437358284-4721473936f8?crop=entropy&cs=srgb&fm=jpg&q=85",
+          "alt": "Abstract Tech Background",
+          "category": "login_bg"
+        }
+      ]
+    },
+    "icons": {
+      "library": "lucide-react",
+      "preferred_icons": ["MessageSquare", "Inbox", "Users", "BarChart3", "Settings", "Zap", "CheckCircle2", "AlertCircle"]
+    }
+  },
+  "instructions_to_main_agent": {
+    "general": [
+      "Use 'Manrope' for all Headings and 'Inter' for body text.",
+      "Implement a 'Bento Grid' layout for the main dashboard.",
+      "Use the 'Electric Indigo' (#4338ca) as the primary brand color.",
+      "Ensure all interactive elements have 'data-testid' attributes.",
+      "Use 'sonner' for toast notifications.",
+      "Do NOT use generic gradients. Use solid colors or subtle noise textures.",
+      "For the Unified Inbox, use a 3-pane layout: Sidebar (Nav), List (Messages), Detail (Conversation).",
+      "Use 'recharts' for data visualization (charts).",
+      "Ensure high contrast for text readability (WCAG AA compliance)."
+    ],
+    "layout_specifics": {
+      "dashboard": "Top row: Key Metrics (Unread, Response Time, CSAT). Middle: Volume Chart (Area Chart). Bottom: Agent Performance Table.",
+      "inbox": "Left: Channel filters. Middle: Message list with status indicators. Right: Chat interface with AI suggestions panel."
+    },
+    "universal_guidelines": [
+      "Avoid 'AI slop' aesthetic (generic centered layouts, excessive gradients).",
+      "Create depth with z-index and subtle shadows.",
+      "Micro-animations on hover and focus are mandatory.",
+      "Use 2-3x more spacing than typical designs.",
+      "NEVER use AI emojis (🤖, 🧠) as icons."
+    ]
+  }
+}
